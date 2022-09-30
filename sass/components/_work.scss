@@ -1,5 +1,5 @@
 .work{
-    display: flex;
+    // display: flex;
 
     &__descr{
     display: inline-block;
@@ -25,14 +25,19 @@
         text-transform: uppercase;
         color: var(--primary-white-color);
     }
+    @media screen and (min-width: 480px){
+        visibility: hidden;
+    }
 }
 .work__foto{
     position: relative;
     width: 370px;
-    margin-right: 30px;
-    &:last-child{
     margin-right: 0;
+    // margin-right: 30px;
+    &:last-child{
+    // margin-right: 0;
 }
+
 }
 
 

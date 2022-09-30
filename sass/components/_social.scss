@@ -1,5 +1,7 @@
 .social{
     margin-right: auto;
+    text-align: center;
+    margin-bottom: 60px;
     &__title{
     font-family: 'Roboto';
     font-weight: 700;
@@ -15,7 +17,8 @@
 
 .join{
     display: flex;
-
+    align-items: center;
+    justify-content: center;
     &__icon-social{
     width: 20px;
     height: 20px;
