@@ -1,11 +1,25 @@
 .header{
     border-bottom: 1px solid #ECECEC;
+    position: relative;
+    
 }
 .major{
-    // display:flex;
-    // align-items: center;
+    display:flex;
+    align-items: center;
+    
+    @media screen and (min-width: 480px){
+      
+    }
     &__nav{
-    // display:flex;
-    // align-items: center;
+    
+    width: 480px;
+    min-height: 80px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (min-width: 480px){
+        
+    }
 }
 }
+

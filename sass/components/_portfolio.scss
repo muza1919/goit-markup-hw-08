@@ -1,14 +1,19 @@
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: calc(-1* var(--portfolio-card-gap));
-    margin-bottom: calc(-1* var(--portfolio-card-gap));
+    // display: flex;
+    // flex-wrap: wrap;
+    // margin-right: calc(-1* var(--portfolio-card-gap));
+    // margin-bottom: calc(-1* var(--portfolio-card-gap));
 
     &__card{
-    width: 370px;
-    flex-basis: calc(100% / 3 - var(--portfolio-card-gap));
+        width: 450px;
+    // width: 370px;
+    // flex-basis: calc(100% / 3 - var(--portfolio-card-gap));
     margin-right: var(--portfolio-card-gap);
     margin-bottom: var(--portfolio-card-gap);}
+    &__foto{
+        width: 450px;
+        // width: 370px;
+    }
 
     &__text{
     padding: 20px 24px;

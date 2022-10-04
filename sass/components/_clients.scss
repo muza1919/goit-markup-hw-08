@@ -1,18 +1,28 @@
 .clients{
     // display: flex;
+
+    @media screen and (min-width: 480px){
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -30px;
+    }
+    
 }
 .inline{
     display: inline-block;
 }
 .clients__item{
-    width: 210px;
     // width: 170px;
-    height: 92px;
+    // height: 92px;
     &:not(:last-child){
     // margin-right: 30px;
     }
     @media screen and (min-width: 480px){
-        
+        width: calc((100% - 2 * 60px) / 2);
+        margin: 30px;
+    }
+    @media screen and (max-width: 767px){
+      
     }
 }
 .clients__logo{

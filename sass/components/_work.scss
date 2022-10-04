@@ -1,3 +1,8 @@
+.work_section{
+    @media screen and (min-width: 480px){
+        display: none;
+    }
+}
 .work{
     // display: flex;
 
@@ -26,7 +31,7 @@
         color: var(--primary-white-color);
     }
     @media screen and (min-width: 480px){
-        visibility: hidden;
+        
     }
 }
 .work__foto{
