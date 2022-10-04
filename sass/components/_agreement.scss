@@ -8,10 +8,15 @@
     margin-left: 8.38px;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+
+    @media screen and (min-width:1200px){
+        font-size: 14px;
+        line-height: 24px;
+     }
 }
     &__link{
         color: var(--accent-color);

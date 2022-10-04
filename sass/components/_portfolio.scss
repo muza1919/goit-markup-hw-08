@@ -1,24 +1,43 @@
 .portfolio {
-    // display: flex;
-    // flex-wrap: wrap;
-    // margin-right: calc(-1* var(--portfolio-card-gap));
-    // margin-bottom: calc(-1* var(--portfolio-card-gap));
+
+    @media screen and (min-width:768px){
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: calc(-1* var(--portfolio-card-gap));
+        margin-bottom: calc(-1* var(--portfolio-card-gap));
+    }
+    @media screen and (min-width:1200px){
+        margin-right: calc(-1* var(--portfolio-card-gap));
+        margin-bottom: calc(-1* var(--portfolio-card-gap));
+    }
 
     &__card{
+        display: flex;
         width: 450px;
-    // width: 370px;
-    // flex-basis: calc(100% / 3 - var(--portfolio-card-gap));
+        @media screen and (min-width:768px){
+            flex-basis: calc(100% / 2 - var(--portfolio-card-gap));
+        }
+        @media screen and (min-width:1200px){
+            flex-basis: calc(100% / 3 - var(--portfolio-card-gap));
+        }
+
     margin-right: var(--portfolio-card-gap);
     margin-bottom: var(--portfolio-card-gap);}
     &__foto{
         width: 450px;
-        // width: 370px;
+        @media screen and (min-width:768px){
+            width: 354px;
+        }
+        @media screen and (min-width:1200px){
+            width: 370px;
+        }
     }
 
     &__text{
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: 0;
+    flex-grow: 1
     }
     &__subtitle{
         color: var(--title-text-color);
@@ -45,6 +64,8 @@
 
 .portfolio__link{
     display: block;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: currentColor;
     box-shadow: none;

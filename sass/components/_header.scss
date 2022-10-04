@@ -4,22 +4,26 @@
     
 }
 .major{
-    display:flex;
-    align-items: center;
+   display:flex;
+   align-items: center;
     
-    @media screen and (min-width: 480px){
-      
-    }
     &__nav{
     
-    width: 480px;
-    min-height: 80px;
-    display:flex;
+     display: flex;
     align-items: center;
-    justify-content: space-between;
-    @media screen and (min-width: 480px){
-        
+    // justify-content: space-between;
+    @media screen and (max-width: 767px){
+        width: 480px;
+    min-height: 80px;
+    margin-bottom: auto;
     }
+    @media screen and (min-width: 768px){
+        margin-left: 88px;
+        margin-right: 96px;
+    }
+    @media screen and (min-width:1200px){
+        margin-left: 93px; 
+        }
 }
 }
 
