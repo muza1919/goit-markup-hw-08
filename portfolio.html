@@ -20,76 +20,90 @@
   <body>
     <header class="header main-bg">
       <div class="container major">
-        
-          <a href="" hreflang="en" class="logo link"
-            ><span class="logo__text">Web</span>Studio</a
-          >
-          <button
-            class="menu-btn js-open-menu"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg width="40" height="40">
-              <use href="./images/icons.svg/sprite.svg#icon-menu"></use>
+        <a href="" hreflang="en" class="logo link"
+          ><span class="logo__text">Web</span>Studio</a
+        >
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg class="menu__icon-close" width="40" height="40">
+              <use href="./images/icons.svg/sprite.svg#icon-close"></use>
             </svg>
           </button>
-
-          <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
-              <svg class="menu__icon-close" width="40" height="40">
-                <use href="./images/icons.svg/sprite.svg#icon-close"></use>
-              </svg>
-            </button>
-               <nav class="major__nav">
-                  <ul class="site list">
-                    <li class="site__item">
-                      <a href="./index.html" class="link site__link">Студія</a>
-                    </li>
-                    <li class="site__item">
-                      <a href="./portfolio.html" class="link site__link current">Портфоліо</a>
-                    </li>
-                    <li class="site__item">
-                      <a href="" class="link site__link">Контакти</a>
-                    </li>
-                  </ul>
-                </nav>
-                  <ul class="contacts-header list">
-                    <li class="contacts-header__item">
-                      <a
-                        href="mailto:info@devstudio.com"
-                        class="link contacts-header__link"
-                      >
-                        <svg
-                          class="contacts-header__icon-envelope"
-                          width="16"
-                          height="12"
-                        >
-                          <use
-                            href="./images/icons.svg/sprite.svg#icon-envelope"
-                          ></use></svg>info@devstudio.com</a>
-                    </li>
-                    <li class="contacts-header__item">
-                      <a href="tel:+380961111111" class="link contacts-header__link accent">
-                        <svg
-                          class="contacts-header__icon-smartphone"
-                          width="10"
-                          height="16"
-                        >
-                          <use
-                            href="./images/icons.svg/sprite.svg#icon-smartphone"
-                          ></use></svg
-                        >+38 096 111 11 11</a
-                      >
-                    </li>
-                </ul>
-              <ul class="mobile-socials list">
-              <li class="mobile-socials__item"><a href="" class="link mobile-socials__link">Instagram</a></li>
-              <li class="mobile-socials__item"><a href="" class="link mobile-socials__link">Twitter</a></li>
-              <li class="mobile-socials__item"><a href="" class="link mobile-socials__link">Facebook</a></li>
-              <li class="mobile-socials__item"><a href="" class="link mobile-socials__link">LinkedIn</a></li>
-             </ul>
-          </div>
+          <nav class="major__nav">
+            <ul class="site list">
+              <li class="site__item">
+                <a href="./index.html" class="link site__link">Студія</a>
+              </li>
+              <li class="site__item">
+                <a href="./portfolio.html" class="link site__link current"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="site__item">
+                <a href="" class="link site__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts-header list">
+            <li class="contacts-header__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="link contacts-header__link"
+              >
+                <svg
+                  class="contacts-header__icon-envelope"
+                  width="16"
+                  height="12"
+                >
+                  <use
+                    href="./images/icons.svg/sprite.svg#icon-envelope"
+                  ></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-header__item">
+              <a
+                href="tel:+380961111111"
+                class="link contacts-header__link accent"
+              >
+                <svg
+                  class="contacts-header__icon-smartphone"
+                  width="10"
+                  height="16"
+                >
+                  <use
+                    href="./images/icons.svg/sprite.svg#icon-smartphone"
+                  ></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-socials list">
+            <li class="mobile-socials__item">
+              <a href="" class="link mobile-socials__link">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="link mobile-socials__link">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="link mobile-socials__link">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="link mobile-socials__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -118,16 +132,17 @@
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img class="portfolio__foto"
-                  srcset="
-                  ./images/portfolio/tehnokryak-354.jpg 354w,
-                ./images/portfolio/tehnokryak-370.jpg 370w,
-                ./images/portfolio/tehnokryak-450.jpg 450w,
-                ./images/portfolio/tehnokryak-708.jpg 708w,
-                ./images/portfolio/tehnokryak-740.jpg 740w,
-                ./images/portfolio/tehnokryak-900.jpg 900w,
-                "
-                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                  <img
+                    class="portfolio__foto"
+                    srcset="
+                      ./images/portfolio/tehnokryak-354.jpg 354w,
+                      ./images/portfolio/tehnokryak-370.jpg 370w,
+                      ./images/portfolio/tehnokryak-450.jpg 450w,
+                      ./images/portfolio/tehnokryak-708.jpg 708w,
+                      ./images/portfolio/tehnokryak-740.jpg 740w,
+                      ./images/portfolio/tehnokryak-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                     src="./images/portfolio/tehnokryak-450.jpg"
                     alt="Веб-сайт"
                   />
@@ -151,16 +166,17 @@
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img class="portfolio__foto"
-                  srcset="
-                  ./images/portfolio/poster-354.jpg 354w,
-                ./images/portfolio/poster-370.jpg 370w,
-                ./images/portfolio/poster-450.jpg 450w,
-                ./images/portfolio/poster-708.jpg 708w,
-                ./images/portfolio/poster-740.jpg 740w,
-                ./images/portfolio/poster-900.jpg 900w,
-                "
-                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                  <img
+                    class="portfolio__foto"
+                    srcset="
+                      ./images/portfolio/poster-354.jpg 354w,
+                      ./images/portfolio/poster-370.jpg 370w,
+                      ./images/portfolio/poster-450.jpg 450w,
+                      ./images/portfolio/poster-708.jpg 708w,
+                      ./images/portfolio/poster-740.jpg 740w,
+                      ./images/portfolio/poster-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                     src="./images/portfolio/poster-450.jpg"
                     alt="Дизайн"
                   />
@@ -186,16 +202,17 @@
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img class="portfolio__foto"
-                  srcset="
-                  ./images/portfolio/restaraunt-354.jpg 354w,
-                ./images/portfolio/restaraunt-370.jpg 370w,
-                ./images/portfolio/restaraunt-450.jpg 450w,
-                ./images/portfolio/restaraunt-708.jpg 708w,
-                ./images/portfolio/restaraunt-740.jpg 740w,
-                ./images/portfolio/restaraunt-900.jpg 900w,
-                "
-                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                  <img
+                    class="portfolio__foto"
+                    srcset="
+                      ./images/portfolio/restaraunt-354.jpg 354w,
+                      ./images/portfolio/restaraunt-370.jpg 370w,
+                      ./images/portfolio/restaraunt-450.jpg 450w,
+                      ./images/portfolio/restaraunt-708.jpg 708w,
+                      ./images/portfolio/restaraunt-740.jpg 740w,
+                      ./images/portfolio/restaraunt-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                     src="./images/portfolio/restaraunt-450.jpg"
                     alt="Додаток"
                   />
@@ -221,16 +238,17 @@
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img class="portfolio__foto"
-                  srcset="
-                  ./images/portfolio/prime-354.jpg 354w,
-                  ./images/portfolio/prime-370.jpg 370w,
-                  ./images/portfolio/prime-450.jpg 450w,
-                  ./images/portfolio/prime-708.jpg 708w,
-                  ./images/portfolio/prime-740.jpg 740w,
-                  ./images/portfolio/prime-900.jpg 900w,
-                  "
-                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                  <img
+                    class="portfolio__foto"
+                    srcset="
+                      ./images/portfolio/prime-354.jpg 354w,
+                      ./images/portfolio/prime-370.jpg 370w,
+                      ./images/portfolio/prime-450.jpg 450w,
+                      ./images/portfolio/prime-708.jpg 708w,
+                      ./images/portfolio/prime-740.jpg 740w,
+                      ./images/portfolio/prime-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                     src="./images/portfolio/prime-450.jpg"
                     alt="Маркетинг"
                   />
@@ -256,16 +274,17 @@
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img class="portfolio__foto"
-                  srcset="
-                  ./images/portfolio/boxes-354.jpg 354w,
-                  ./images/portfolio/boxes-370.jpg 370w,
-                  ./images/portfolio/boxes-450.jpg 450w,
-                  ./images/portfolio/boxes-708.jpg 708w,
-                  ./images/portfolio/boxes-740.jpg 740w,
-                  ./images/portfolio/boxes-900.jpg 900w,
-                  "
-                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                  <img
+                    class="portfolio__foto"
+                    srcset="
+                      ./images/portfolio/boxes-354.jpg 354w,
+                      ./images/portfolio/boxes-370.jpg 370w,
+                      ./images/portfolio/boxes-450.jpg 450w,
+                      ./images/portfolio/boxes-708.jpg 708w,
+                      ./images/portfolio/boxes-740.jpg 740w,
+                      ./images/portfolio/boxes-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                     src="./images/portfolio/boxes-450.jpg"
                     alt="Додаток"
                   />
@@ -291,19 +310,19 @@
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img class="portfolio__foto"
-                  srcset="
-                  ./images/portfolio/inspir-354.jpg 354w,
-                  ./images/portfolio/inspir-370.jpg 370w,
-                  ./images/portfolio/inspir-450.jpg 450w,
-                  ./images/portfolio/inspir-708.jpg 708w,
-                  ./images/portfolio/inspir-740.jpg 740w,
-                  ./images/portfolio/inspir-900.jpg 900w,
-                  "
-                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                  <img
+                    class="portfolio__foto"
+                    srcset="
+                      ./images/portfolio/inspir-354.jpg 354w,
+                      ./images/portfolio/inspir-370.jpg 370w,
+                      ./images/portfolio/inspir-450.jpg 450w,
+                      ./images/portfolio/inspir-708.jpg 708w,
+                      ./images/portfolio/inspir-740.jpg 740w,
+                      ./images/portfolio/inspir-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                     src="./images/portfolio/inspir-450.jpg"
                     alt="Веб-сайт"
-
                   />
                   <div class="overlay-portfolio">
                     <div class="overlay-portfolio__text">
@@ -327,16 +346,17 @@
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img class="portfolio__foto"
-                  srcset="
-                  ./images/portfolio/limited-354.jpg 354w,
-                  ./images/portfolio/limited-370.jpg 370w,
-                  ./images/portfolio/limited-450.jpg 450w,
-                  ./images/portfolio/limited-708.jpg 708w,
-                  ./images/portfolio/limited-740.jpg 740w,
-                  ./images/portfolio/limited-900.jpg 900w,
-                  "
-                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                  <img
+                    class="portfolio__foto"
+                    srcset="
+                      ./images/portfolio/limited-354.jpg 354w,
+                      ./images/portfolio/limited-370.jpg 370w,
+                      ./images/portfolio/limited-450.jpg 450w,
+                      ./images/portfolio/limited-708.jpg 708w,
+                      ./images/portfolio/limited-740.jpg 740w,
+                      ./images/portfolio/limited-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                     src="./images/portfolio/limited-450.jpg"
                     alt="Дизайн"
                   />
@@ -362,16 +382,17 @@
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img class="portfolio__foto"
-                  srcset="
-                  ./images/portfolio/lab-354.jpg 354w,
-                  ./images/portfolio/lab-370.jpg 370w,
-                  ./images/portfolio/lab-450.jpg 450w,
-                  ./images/portfolio/lab-708.jpg 708w,
-                  ./images/portfolio/lab-740.jpg 740w,
-                  ./images/portfolio/lab-900.jpg 900w,
-                  "
-                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                  <img
+                    class="portfolio__foto"
+                    srcset="
+                      ./images/portfolio/lab-354.jpg 354w,
+                      ./images/portfolio/lab-370.jpg 370w,
+                      ./images/portfolio/lab-450.jpg 450w,
+                      ./images/portfolio/lab-708.jpg 708w,
+                      ./images/portfolio/lab-740.jpg 740w,
+                      ./images/portfolio/lab-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                     src="./images/portfolio/lab-450.jpg"
                     alt="Маркетинг"
                   />
@@ -397,16 +418,17 @@
             <li class="portfolio__card">
               <a href="" class="portfolio__link">
                 <div class="portfolio__thumb">
-                  <img class="portfolio__foto"
-                  srcset="
-                  ./images/portfolio/business-354.jpg 354w,
-                  ./images/portfolio/business-370.jpg 370w,
-                  ./images/portfolio/business-450.jpg 450w,
-                  ./images/portfolio/business-708.jpg 708w,
-                  ./images/portfolio/business-740.jpg 740w,
-                  ./images/portfolio/business-900.jpg 900w,
-                  "
-                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                  <img
+                    class="portfolio__foto"
+                    srcset="
+                      ./images/portfolio/business-354.jpg 354w,
+                      ./images/portfolio/business-370.jpg 370w,
+                      ./images/portfolio/business-450.jpg 450w,
+                      ./images/portfolio/business-708.jpg 708w,
+                      ./images/portfolio/business-740.jpg 740w,
+                      ./images/portfolio/business-900.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                     src="./images/portfolio/business-450.jpg"
                     alt="Додаток"
                   />
@@ -436,69 +458,75 @@
     <footer class="footer">
       <div class="container info">
         <div class="footer__group">
-            <div class="down">
-              <a href="" hreflang="en" class="logo logo__footer link"
-                ><span class="logo__text">Web</span>Studio</a
-              >
-              
-              <address class="contacts-footer">
-                <ul class="list contacts-footer__list">
-                  <li
-                    class="contacts-footer__territorially contacts-footer__contacts"
+          <div class="down">
+            <a href="" hreflang="en" class="logo logo__footer link"
+              ><span class="logo__text">Web</span>Studio</a
+            >
+
+            <address class="contacts-footer">
+              <ul class="list contacts-footer__list">
+                <li
+                  class="contacts-footer__territorially contacts-footer__contacts"
+                >
+                  м. Київ, пр-т Лесі Українки, 26
+                </li>
+                <li class="contacts-footer__contacts">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="link contacts-footer__link"
+                    >info@devstudio.com</a
                   >
-                    м. Київ, пр-т Лесі Українки, 26
-                  </li>
-                  <li class="contacts-footer__contacts">
-                    <a
-                      href="mailto:info@devstudio.com"
-                      class="link contacts-footer__link"
-                      >info@devstudio.com</a
-                    >
-                  </li>
-                  <li class="contacts-footer__contacts">
-                    <a href="tel:+380961111111" class="link contacts-footer__link"
-                      >+38 096 111 11 11</a
-                    >
-                  </li>
-                </ul>
-              </address>
-            </div>
-            <div class="social">
-              <p class="social__title">приєднуйтесь</p>
-              <ul class="join list">
-                <li class="join__item">
-                  <a href="" class="link join__link ">
-                    <svg class="join__icon-social">
-                      <use
-                        href="./images/icons.svg/sprite.svg#icon-instagram"
-                      ></use>
-                    </svg>
-                  </a>
                 </li>
-                <li class="join__item">
-                  <a href="" class="link join__link">
-                    <svg class="join__icon-social">
-                      <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="join__item">
-                  <a href="" class="link join__link">
-                    <svg class="join__icon-social">
-                      <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="join__item">
-                  <a href="" class="link join__link">
-                    <svg class="join__icon-social">
-                      <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
+                <li class="contacts-footer__contacts">
+                  <a href="tel:+380961111111" class="link contacts-footer__link"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
-            </div>
-         </div>
+            </address>
+          </div>
+          <div class="social">
+            <p class="social__title">приєднуйтесь</p>
+            <ul class="join list">
+              <li class="join__item">
+                <a href="" class="link join__link">
+                  <svg class="join__icon-social">
+                    <use
+                      href="./images/icons.svg/sprite.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a href="" class="link join__link">
+                  <svg class="join__icon-social">
+                    <use
+                      href="./images/icons.svg/sprite.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a href="" class="link join__link">
+                  <svg class="join__icon-social">
+                    <use
+                      href="./images/icons.svg/sprite.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a href="" class="link join__link">
+                  <svg class="join__icon-social">
+                    <use
+                      href="./images/icons.svg/sprite.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="footer-field">
           <p class="social__title">Підпишіться на розсилку</p>
           <form class="sign-up">

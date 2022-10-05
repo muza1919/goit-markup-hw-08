@@ -20,74 +20,82 @@
   <body>
     <header class="header main-bg">
       <div class="container major">
-        
-          <a href="" hreflang="en" class="logo link"
-            ><span class="logo__text">Web</span>Studio</a
-          >
-          <button
-            class="menu-btn js-open-menu"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg width="40" height="40">
-              <use href="./images/icons.svg/sprite.svg#icon-menu"></use>
+        <a href="" hreflang="en" class="logo link"
+          ><span class="logo__text">Web</span>Studio</a
+        >
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg class="menu__icon-close" width="40" height="40">
+              <use href="./images/icons.svg/sprite.svg#icon-close"></use>
             </svg>
           </button>
-
-          <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
-              <svg class="menu__icon-close" width="40" height="40">
-                <use href="./images/icons.svg/sprite.svg#icon-close"></use>
-              </svg>
-            </button>
-               <nav class="major__nav">
-                  <ul class="site list">
-                    <li class="site__item">
-                      <a href="./index.html" class="link site__link current">Студія</a>
-                    </li>
-                    <li class="site__item">
-                      <a href="./portfolio.html" class="link site__link">Портфоліо</a>
-                    </li>
-                    <li class="site__item">
-                      <a href="" class="link site__link">Контакти</a>
-                    </li>
-                  </ul>
-                </nav>
-                  <ul class="contacts-header list">
-                    <li class="contacts-header__item">
-                      <a
-                        href="mailto:info@devstudio.com"
-                        class="link contacts-header__link"
-                      >
-                        <svg
-                          class="contacts-header__icon-envelope"
-                        >
-                          <use
-                            href="./images/icons.svg/sprite.svg#icon-envelope"
-                          ></use></svg>info@devstudio.com</a>
-                    </li>
-                    <li class="contacts-header__item">
-                      <a href="tel:+380961111111" class="link contacts-header__link accent">
-                        <svg
-                          class="contacts-header__icon-smartphone"
-                        >
-                          <use
-                            href="./images/icons.svg/sprite.svg#icon-smartphone"
-                          ></use></svg
-                        >+38 096 111 11 11</a
-                      >
-                    </li>
-                </ul>
-              <ul class="mobile-socials list">
-              <li class="mobile-socials__item"><a href="" class="link mobile-socials__link">Instagram</a></li>
-              <li class="mobile-socials__item"><a href="" class="link mobile-socials__link">Twitter</a></li>
-              <li class="mobile-socials__item"><a href="" class="link mobile-socials__link">Facebook</a></li>
-              <li class="mobile-socials__item"><a href="" class="link mobile-socials__link">LinkedIn</a></li>
-             </ul>
-           
-          </div>
-        
+          <nav class="major__nav">
+            <ul class="site list">
+              <li class="site__item">
+                <a href="./index.html" class="link site__link current"
+                  >Студія</a
+                >
+              </li>
+              <li class="site__item">
+                <a href="./portfolio.html" class="link site__link">Портфоліо</a>
+              </li>
+              <li class="site__item">
+                <a href="" class="link site__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts-header list">
+            <li class="contacts-header__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="link contacts-header__link"
+              >
+                <svg class="contacts-header__icon-envelope">
+                  <use
+                    href="./images/icons.svg/sprite.svg#icon-envelope"
+                  ></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-header__item">
+              <a
+                href="tel:+380961111111"
+                class="link contacts-header__link accent"
+              >
+                <svg class="contacts-header__icon-smartphone">
+                  <use
+                    href="./images/icons.svg/sprite.svg#icon-smartphone"
+                  ></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-socials list">
+            <li class="mobile-socials__item">
+              <a href="" class="link mobile-socials__link">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="link mobile-socials__link">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="link mobile-socials__link">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="link mobile-socials__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -230,20 +238,18 @@
         </div>
       </section>
       <section class="section no-padding-top work_section">
-        <div class="container ">
+        <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="work list">
             <li class="work__foto">
               <img
-              srcset="
-                ./images/work/programmer-370.jpg 370w,
-                ./images/work/programmer-740.jpg 740w,
+                srcset="
+                  ./images/work/programmer-370.jpg 370w,
+                  ./images/work/programmer-740.jpg 740w
                 "
                 sizes="(min-width: 1200px) 370px"
                 src="./images/work/programmer-370.jpg"
                 alt="Програміст працює за робочим столом."
-                width="370"
-                height="294"
               />
               <div class="work__descr">
                 <h3 class="work__text">Десктопні додатки</h3>
@@ -253,14 +259,12 @@
             <li class="work__foto">
               <img
                 srcset="
-                ./images/work/ui-370.jpg 370w,
-                ./images/work/ui-740.jpg 740w,
+                  ./images/work/ui-370.jpg 370w,
+                  ./images/work/ui-740.jpg 740w
                 "
                 sizes="(min-width: 1200px) 370px"
                 src="./images/work/ui-370.jpg"
                 alt="UI дизайнер розробляє програми для смартфонів, команда розробників працює над інтерфейсом мобільних телефонів."
-                width="370"
-                height="294"
               />
               <div class="work__descr">
                 <h3 class="work__text">Мобільні додатки</h3>
@@ -269,14 +273,12 @@
             <li class="work__foto">
               <img
                 srcset="
-                ./images/work/colour-370.jpg 370w,
-                ./images/work/colour-740.jpg 740w,
+                  ./images/work/colour-370.jpg 370w,
+                  ./images/work/colour-740.jpg 740w
                 "
                 sizes="(min-width: 1200px) 370px"
                 src="./images/work/colour-370.jpg"
                 alt="Веб-дизайнер із графічним планшетом вибору кольорів."
-                width="370"
-                height="294"
               />
 
               <div class="work__descr">
@@ -294,17 +296,16 @@
               <img
                 class="team__foto"
                 srcset="
-                ./images/igor/igor-270.jpg 270w,
-                ./images/igor/igor-354.jpg 354w,
-                ./images/igor/igor-450.jpg 450w,
-                ./images/igor/igor-540.jpg 540w,
-                ./images/igor/igor-708.jpg 708w,
-                ./images/igor/igor-900.jpg 900w,
+                  ./images/igor/igor-270.jpg 270w,
+                  ./images/igor/igor-354.jpg 354w,
+                  ./images/igor/igor-450.jpg 450w,
+                  ./images/igor/igor-540.jpg 540w,
+                  ./images/igor/igor-708.jpg 708w,
+                  ./images/igor/igor-900.jpg 900w
                 "
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 src="./images/igor/igor-450.jpg"
                 alt="Product Designer"
-                
               />
               <div class="team__info">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
@@ -313,7 +314,7 @@
                 <div class="social-team">
                   <ul class="join list">
                     <li class="join__item">
-                      <a href="" class="link join__icon-link ">
+                      <a href="" class="link join__icon-link">
                         <svg class="join__icon">
                           <use
                             href="./images/icons.svg/sprite.svg#icon-instagram"
@@ -322,7 +323,7 @@
                       </a>
                     </li>
                     <li class="join__item">
-                      <a href="" class="link join__icon-link ">
+                      <a href="" class="link join__icon-link">
                         <svg class="join__icon">
                           <use
                             href="./images/icons.svg/sprite.svg#icon-twitter"
@@ -331,7 +332,7 @@
                       </a>
                     </li>
                     <li class="join__item">
-                      <a href="" class="link join__icon-link ">
+                      <a href="" class="link join__icon-link">
                         <svg class="join__icon">
                           <use
                             href="./images/icons.svg/sprite.svg#icon-facebook"
@@ -356,12 +357,12 @@
               <img
                 class="team__foto"
                 srcset="
-                ./images/olga/olga-270.jpg 270w,
-                ./images/olga/olga-354.jpg 354w,
-                ./images/olga/olga-450.jpg 450w,
-                ./images/olga/olga-540.jpg 540w,
-                ./images/olga/olga-708.jpg 708w,
-                ./images/olga/olga-900.jpg 900w,
+                  ./images/olga/olga-270.jpg 270w,
+                  ./images/olga/olga-354.jpg 354w,
+                  ./images/olga/olga-450.jpg 450w,
+                  ./images/olga/olga-540.jpg 540w,
+                  ./images/olga/olga-708.jpg 708w,
+                  ./images/olga/olga-900.jpg 900w
                 "
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 src="./images/olga/olga-450.jpg"
@@ -417,12 +418,12 @@
               <img
                 class="team__foto"
                 srcset="
-                ./images/mykola/mykola-270.jpg 270w,
-                ./images/mykola/mykola-354.jpg 354w,
-                ./images/mykola/mykola-450.jpg 450w,
-                ./images/mykola/mykola-540.jpg 540w,
-                ./images/mykola/mykola-708.jpg 708w,
-                ./images/mykola/mykola-900.jpg 900w,
+                  ./images/mykola/mykola-270.jpg 270w,
+                  ./images/mykola/mykola-354.jpg 354w,
+                  ./images/mykola/mykola-450.jpg 450w,
+                  ./images/mykola/mykola-540.jpg 540w,
+                  ./images/mykola/mykola-708.jpg 708w,
+                  ./images/mykola/mykola-900.jpg 900w
                 "
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 src="./images/mykola/mykola-450.jpg"
@@ -477,12 +478,12 @@
               <img
                 class="team__foto"
                 srcset="
-                ./images/myhailo/myhailo-270.jpg 270w,
-                ./images/myhailo/myhailo-354.jpg 354w,
-                ./images/myhailo/myhailo-450.jpg 450w,
-                ./images/myhailo/myhailo-540.jpg 540w,
-                ./images/myhailo/myhailo-708.jpg 708w,
-                ./images/myhailo/myhailo-900.jpg 900w,
+                  ./images/myhailo/myhailo-270.jpg 270w,
+                  ./images/myhailo/myhailo-354.jpg 354w,
+                  ./images/myhailo/myhailo-450.jpg 450w,
+                  ./images/myhailo/myhailo-540.jpg 540w,
+                  ./images/myhailo/myhailo-708.jpg 708w,
+                  ./images/myhailo/myhailo-900.jpg 900w
                 "
                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 src="./images/myhailo/myhailo-450.jpg"
@@ -589,69 +590,75 @@
     <footer class="footer">
       <div class="container info">
         <div class="footer__group">
-            <div class="down">
-              <a href="" hreflang="en" class="logo logo__footer link"
-                ><span class="logo__text">Web</span>Studio</a
-              >
-              
-              <address class="contacts-footer">
-                <ul class="list contacts-footer__list">
-                  <li
-                    class="contacts-footer__territorially contacts-footer__contacts"
+          <div class="down">
+            <a href="" hreflang="en" class="logo logo__footer link"
+              ><span class="logo__text">Web</span>Studio</a
+            >
+
+            <address class="contacts-footer">
+              <ul class="list contacts-footer__list">
+                <li
+                  class="contacts-footer__territorially contacts-footer__contacts"
+                >
+                  м. Київ, пр-т Лесі Українки, 26
+                </li>
+                <li class="contacts-footer__contacts">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="link contacts-footer__link"
+                    >info@devstudio.com</a
                   >
-                    м. Київ, пр-т Лесі Українки, 26
-                  </li>
-                  <li class="contacts-footer__contacts">
-                    <a
-                      href="mailto:info@devstudio.com"
-                      class="link contacts-footer__link"
-                      >info@devstudio.com</a
-                    >
-                  </li>
-                  <li class="contacts-footer__contacts">
-                    <a href="tel:+380961111111" class="link contacts-footer__link"
-                      >+38 096 111 11 11</a
-                    >
-                  </li>
-                </ul>
-              </address>
-            </div>
-            <div class="social">
-              <p class="social__title">приєднуйтесь</p>
-              <ul class="join list">
-                <li class="join__item">
-                  <a href="" class="link join__link ">
-                    <svg class="join__icon-social">
-                      <use
-                        href="./images/icons.svg/sprite.svg#icon-instagram"
-                      ></use>
-                    </svg>
-                  </a>
                 </li>
-                <li class="join__item">
-                  <a href="" class="link join__link">
-                    <svg class="join__icon-social">
-                      <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="join__item">
-                  <a href="" class="link join__link">
-                    <svg class="join__icon-social">
-                      <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="join__item">
-                  <a href="" class="link join__link">
-                    <svg class="join__icon-social">
-                      <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
+                <li class="contacts-footer__contacts">
+                  <a href="tel:+380961111111" class="link contacts-footer__link"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
-            </div>
-         </div>
+            </address>
+          </div>
+          <div class="social">
+            <p class="social__title">приєднуйтесь</p>
+            <ul class="join list">
+              <li class="join__item">
+                <a href="" class="link join__link">
+                  <svg class="join__icon-social">
+                    <use
+                      href="./images/icons.svg/sprite.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a href="" class="link join__link">
+                  <svg class="join__icon-social">
+                    <use
+                      href="./images/icons.svg/sprite.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a href="" class="link join__link">
+                  <svg class="join__icon-social">
+                    <use
+                      href="./images/icons.svg/sprite.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__item">
+                <a href="" class="link join__link">
+                  <svg class="join__icon-social">
+                    <use
+                      href="./images/icons.svg/sprite.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="footer-field">
           <p class="social__title">Підпишіться на розсилку</p>
           <form class="sign-up">
@@ -673,7 +680,7 @@
         </div>
       </div>
     </footer>
-    
+
     <script src="./js/modal.js"></script>
     <script
       defer
