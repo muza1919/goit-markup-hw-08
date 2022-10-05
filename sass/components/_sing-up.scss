@@ -1,15 +1,22 @@
 .footer-field{
     text-align: center;
+
+    @media screen and (min-width:1200px){
+        text-align: start;
+        margin-left: auto;;
+     }
 }
 .sign-up{
-    // display: flex;
-    // align-items: baseline;
+    @media screen and (min-width:1200px){
+        display: flex;
+    align-items: baseline;
+    }
 }
 .sign-up__input{
     width: 450px;
     height: 50px;
     margin-bottom: 20px;
-    // margin-right: 12px;
+
     padding-left: 16px;
     color: var(--primary-white-color);
     background-color: var(--bg-color-dark);
@@ -18,13 +25,15 @@
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    
     @media screen and (min-width:1200px){
         width: 358px;
+        margin-right: 12px;
      }
     
 
     &:focus{
-    border: 1px solid var(--accent-color);
+        border: 1px solid var(--accent-color);
     }
     &::placeholder{
         font-style: normal;

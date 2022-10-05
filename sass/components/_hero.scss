@@ -1,33 +1,31 @@
 .hero{
     background-color: var(--bg-color-dark);
     text-align: center;
-    
     display: flex;
     justify-content: center;
     align-items: center;
-    // padding-top: 200px;
-    // padding-bottom: 200px;
-   
+
     &__title{
-    color: var(--primary-white-color);
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 42px;
-    // font-size: 44px;
-    // line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    @media screen and (min-width: 480px){
-        width: 360px;
+        color: var(--primary-white-color);
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: 480px){
+            width: 360px;
+        }
+        @media screen and (min-width: 1200px){
+            width: 696px;
+            font-size: 44px;
+            line-height: 1.36; 
+        }
     }
-    @media screen and (min-width: 1200px){
-        width: 700px;
-    }
-}
 }
 

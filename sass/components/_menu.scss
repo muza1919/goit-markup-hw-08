@@ -4,32 +4,30 @@
   justify-content: center;
   margin-left: auto;
   padding: 0;
-  
   border: none;
   background-color: transparent;
   cursor: pointer;
-}
 
-@media screen and (min-width: 768px) {
-  .menu-btn {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
+
 .menu-toggle {
   position: absolute;
   top: 20px;
   right: 20px;
   padding: 0;
-
   border: none;
   background-color: transparent;
   cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  .menu-toggle {
+
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
 
 .menu__icon-close{
   fill: var(--title-text-color);
@@ -41,36 +39,33 @@
 }
 .menu-container{
   
-  
-  
   @media screen and (max-width: 767px) {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  padding: 40px 48px;
-  background-color: var(--primary-white-color);
-  transform: translateX(100%);
-  transition: transform 400ms;
-  &.is-open{
-    transform: translateX(0) ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    padding: 40px 48px;
+    background-color: var(--primary-white-color);
+    transform: translateX(100%);
+    transition: transform 400ms;
+    &.is-open{
+      transform: translateX(0) ;
+    }
   }
-   }
   @media screen and (min-width: 768px) {
     display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
-
-
+    justify-content: space-between;
+    flex-grow: 1;
   }
 }
 
 .mobile-socials{
   display: flex;
+
   &__link{
       color:var(--accent-color);
       font-style: normal;
@@ -79,16 +74,20 @@
       line-height: 22px;
       letter-spacing: 0.02em;
   }
+
   &__item{
       padding-right: 10px;
   }
+
   &__item:not(:first-child){
       padding-left: 10px;
   }
+
   &__item:not(:last-child){
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
+
 @media screen and (min-width: 768px) {
   .mobile-socials {
     display: none;
